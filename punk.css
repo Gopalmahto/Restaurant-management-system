@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    }
+/* logo and image */
+#logo{
+    margin: 3px 34px;
+
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    margin: 3px 5px;;
+
+}
+/* list styling */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+   z-index:-1;
+   opacity: 0.4;
+}
+#navbar ul{
+     display: flex;
+     font-family: 'Ubuntu', sans-serif;
+     text-transform: uppercase;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(244, 13, 13);
+}
+#navbar ul input{
+    position: relative;
+    margin-right: 5px;
+    margin-left: 450px;
+    border-radius: 2px solid black;
+    padding: 3px 15px;
+    border-radius: 5px solid rgb(189, 97, 16);
+    
+}
+/* home section */
+#home{
+    color:black;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+   content: "";
+   background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./bg4.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index:-1;
+   /* opacity: 0.6; */
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* service section  */
+
+header{
+    /* display: flex; */
+     background:linear-gradient(rgba(99, 91, 91, 0.7),rgba(78, 59, 59, 0.7)), url(./bg8.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    min-height: 75vh;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    /* height: 100%; */
+    width: 100%;
+    margin: 0 auto;
+}
+.container h1{
+    /* color: white; */
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 1px;
+    margin-top: 52px;
+}
+.container p{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+}
+.service img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.services{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.service{
+    background: #444;
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 10px 10px #222;
+    /* border: 3px solid black; */
+    padding: 20px 20px;
+    margin: 20px 50px;
+    border-radius: 25px;
+    margin-top: 50px;
+    /* transition: all 0.3s ease; */
+}
+/* .service:hover{
+        background: rgb(100, 100, 100);
+        color: #fff;
+}  */
+
+.service h4{
+    color: white;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+    padding: 20px 0;
+}
+.service p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+/* clients section */
+#client-section{
+    height: 340px;
+    position: relative;
+}
+#client-section h1{
+    color: #fff;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background-color: rgb(73, 72, 72);
+   /* background:linear-gradient(rgba(80, 77, 77, 0.6),rgba(82, 75, 75, 0.6)), url(./bg3.jpg); */
+  
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   /* opacity: 0.6; */
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 140px;
+    width: 140px;
+    /* border: 2px solid black; */
+    /* border-radius: 50%; */
+    /* padding: 30px; */
+}
+
+
+/* contact  section */
+
+#contact{
+    position:relative;
+    height:100%;
+    width: 100%;
+}
+#contact h1{
+    color: #fff;
+}
+#contact h1 span{
+    color: #29affd;
+}
+#contact::before{
+    content: "";
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./contact\ me.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+#contact-box textarea {
+    margin-bottom: 30px;
+     width:100% ;
+    padding: 0.5rem;
+}
+.contacts{
+    color:black;
+    font-size: 20px;
+    position: absolute;
+    top: 230px;
+    left: 170px;
+    font-family: sans-serif;
+    /* letter-spacing: 1px; */
+}
+.contacts i{
+    margin: 10px 0;
+}
+
+    
+#form-group label{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    margin-top: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+#form-group input{
+    border: none;
+    background: transparent;
+    border: 3px solid #29affd;
+    text-decoration: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#form-group textarea{
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 3px solid #29affd;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 20px 20px;
+    font-family: sans-serif;
+}
+#contact h3{
+    line-break: normal;
+    color: rgb(45, 151, 223);
+    
+}
+.btn1{
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color:rgb(40, 124, 194);
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 18px;
+    cursor: pointer;
+    position:relative;
+    left: 350px;
+    margin-top: -10px;
+    margin-bottom: 24px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:rgb(133, 9, 9);
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
